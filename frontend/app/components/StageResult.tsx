@@ -43,7 +43,7 @@ function VerdictBadge({ verdict }: { verdict: string }) {
 }
 
 export default function StageResult({
-  stage,
+  stage: _stage,
   output,
   supervisorPassed,
   blocked,
