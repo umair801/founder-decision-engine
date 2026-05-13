@@ -109,7 +109,7 @@ class SupervisorValidation(BaseModel):
 class FounderInput(BaseModel):
     session_id: Optional[str] = None
     stage: Literal["idea_clarity", "customer_discovery", "validation", "financial_reality", "weekly_execution"]
-    idea_description: str
+    idea_description: Optional[str] = None
     problem_statement: Optional[str] = None
     target_customer: Optional[str] = None
     discovery_notes: Optional[str] = None
