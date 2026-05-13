@@ -2,7 +2,8 @@
 
 An AI-powered operating system for early-stage founders. Eliminates vague advice by enforcing structured decisions, numeric scoring, and actionable recommendations at every stage of the founder journey.
 
-**Live API:** https://founder.datawebify.com/docs  
+**Live Frontend:** https://founder.datawebify.com  
+**Live API:** https://founder-api.datawebify.com/docs  
 **Built by:** [Datawebify](https://datawebify.com)
 
 ---
@@ -241,9 +242,9 @@ http://localhost:8001/docs
 
 | Service | Platform | URL |
 |---------|----------|-----|
-| Backend API | Railway | https://founder.datawebify.com |
+| Backend API | Railway | https://founder-api.datawebify.com |
 | Frontend | Vercel | https://founder.datawebify.com |
-| API Docs | Railway | https://founder.datawebify.com/docs |
+| API Docs | Railway | https://founder-api.datawebify.com/docs |
 | Database | Supabase | agai_portfolio project |
 
 ---
@@ -257,6 +258,7 @@ This project targets the intersection of three high-demand Upwork categories:
 - **Agentic AI systems** — LangGraph orchestration, multi-agent routing, supervisor validation layer
 
 **Live demo:** https://founder.datawebify.com  
+**Live API:** https://founder-api.datawebify.com/docs  
 **Full portfolio:** https://datawebify.com  
 **GitHub:** https://github.com/umair801
 
