@@ -19,6 +19,7 @@ const initialSession: SessionState = {
 
 export default function Home() {
   const [session, setSession] = useState<SessionState>(initialSession);
+  const [allInputs, setAllInputs] = useState<Record<string, string | number>>({});
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [lastResult, setLastResult] = useState<{
@@ -34,11 +35,14 @@ export default function Home() {
     setError(null);
     setLastResult(null);
 
+    const mergedInputs = { ...allInputs, ...values };
+    setAllInputs(mergedInputs);
+
     try {
       const response = await runFounderStage({
         stage: session.currentStage,
         session_id: session.sessionId || undefined,
-        ...values,
+        ...mergedInputs,
       });
 
       setLastResult({
@@ -89,6 +93,7 @@ export default function Home() {
 
   function handleReset() {
     setSession(initialSession);
+    setAllInputs({});
     setLastResult(null);
     setError(null);
   }
